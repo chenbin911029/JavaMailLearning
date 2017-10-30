@@ -1,4 +1,4 @@
-package email.util;
+package com.email.util;
 
 public enum MailSenderProvider {
 
