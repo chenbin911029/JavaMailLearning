@@ -1,6 +1,6 @@
 package com.controller;
 
-import com.email.util.CheckingMails;
+import com.email.util.ReplyToEmail;
 import com.email.util.SendEmail;
 
 /**
@@ -40,11 +40,15 @@ public class MailTest {
 //                attachments);
 //        System.out.println("result: "+result2.get("result")+" return:"+result2.get("return"));
 
-        String host = "pop3.163.com";// change accordingly
-        String protocol = "pop3";
-        String username = "13790432378@163.com";// change accordingly
-        String password = "chenbin911029";// change accordingly
-        CheckingMails checkingMails = new CheckingMails();
-        checkingMails.check(host, protocol, username, password);
+//        String host = "pop3.163.com";// change accordingly
+//        String protocol = "pop3";
+//        String username = "13790432378@163.com";// change accordingly
+//        String password = "chenbin911029";// change accordingly
+//        //CheckingMails checkingMails = new CheckingMails();
+//        CheckingMails2 checkingMails2 = new CheckingMails2();
+//        checkingMails2.check(host, protocol, username, password);
+
+        ReplyToEmail replyToEmail = new ReplyToEmail();
+        replyToEmail.replay();
     }
 }
