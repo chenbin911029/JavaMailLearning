@@ -1,7 +1,6 @@
 package com.controller;
 
-import com.email.util.ForwardEmail;
-import com.email.util.SendEmail;
+import com.email.util.QuotaExample;
 
 /**
  * Mail test controller
@@ -10,7 +9,7 @@ import com.email.util.SendEmail;
  */
 public class MailTest {
     public static void main(String[] args){
-        SendEmail emailService = new SendEmail();
+//        SendEmail emailService = new SendEmail();
 //        Map<String,Object> result = emailService.sendSimpleText("13790432378@163.com",
 //                "1724002777@qq.com",
 //                "JavaMail Test",
@@ -48,9 +47,16 @@ public class MailTest {
 //        CheckingMails2 checkingMails2 = new CheckingMails2();
 //        checkingMails2.check(host, protocol, username, password);
 
-        //ReplyToEmail replyToEmail = new ReplyToEmail();
-        //replyToEmail.replay();
-        ForwardEmail forwardEmail = new ForwardEmail();
-        forwardEmail.forward();
+//        ReplyToEmail replyToEmail = new ReplyToEmail();
+//        replyToEmail.replay();
+//        ForwardEmail forwardEmail = new ForwardEmail();
+//        forwardEmail.forward();
+//        DeleteEmail deleteEmail = new DeleteEmail();
+//        deleteEmail.delete(host,protocol,username,password);
+
+//        SendEmailUsingSMTP sendEmailUsingSMTP = new SendEmailUsingSMTP();
+//        sendEmailUsingSMTP.send();
+        QuotaExample quotaExample = new QuotaExample();
+        quotaExample.quota();
     }
 }
