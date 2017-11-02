@@ -1,6 +1,6 @@
 package com.controller;
 
-import com.email.util.ReplyToEmail;
+import com.email.util.ForwardEmail;
 import com.email.util.SendEmail;
 
 /**
@@ -48,7 +48,9 @@ public class MailTest {
 //        CheckingMails2 checkingMails2 = new CheckingMails2();
 //        checkingMails2.check(host, protocol, username, password);
 
-        ReplyToEmail replyToEmail = new ReplyToEmail();
-        replyToEmail.replay();
+        //ReplyToEmail replyToEmail = new ReplyToEmail();
+        //replyToEmail.replay();
+        ForwardEmail forwardEmail = new ForwardEmail();
+        forwardEmail.forward();
     }
 }
